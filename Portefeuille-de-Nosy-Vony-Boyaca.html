@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - RASOHARINIRINA Nosy Vony Boyaca</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#2B3A67',secondary:'#5C88C5'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .typing-effect {
+            overflow: hidden;
+            border-right: 2px solid #2B3A67;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #2B3A67 }
+        }
+        .progress-bar {
+            position: relative;
+            height: 8px;
+            border-radius: 4px;
+            background: #e9ecef;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #5C88C5;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -8px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #2B3A67;
+            z-index: 1;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(43, 58, 103, 0.15);
+        }
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(43, 58, 103, 0.15);
+        }
+        .custom-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #2B3A67;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+        }
+        .custom-checkbox:checked {
+            background-color: #2B3A67;
+        }
+        .custom-checkbox:checked::after {
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="relative w-full h-[500px] overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" style="background-image: url('nosyvony.JPG'); background-size: cover; background-position: center;"></div>
+        <div class="relative container mx-auto px-6 h-full flex flex-col justify-center">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <img src="vonynosy.JPG" alt="RASOHARINIRINA Nosy Vony Boyaca" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">RASOHARINIRINA Nosy Vony Boyaca</h1>
+                    <p class="text-xl md:text-2xl mb-6 opacity-90">Experte en Communication et Entrepreneuriat</p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="mailto:nosyvony@gmail.com" class="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-button transition-all">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="whitespace-nowrap">nosyvony@gmail.com</span>
+                        </a>
+                        <a href="tel:+261344047018" class="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-button transition-all">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="whitespace-nowrap">+261 34 40 470 18</span>
+                        </a>
+                        
+                              
+                            </div>
+                           
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">À Propos</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg leading-relaxed mb-6 typing-effect">
+                    Ayant de l'expérience en communication, entrepreneuriat et gestion de projet, je suis passionnée par l'accompagnement des jeunes vers la réussite professionnelle.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Fondatrice de MK Corporation, une plateforme dédiée à la promotion de l'entrepreneuriat chez les jeunes Malgaches, j'interviens également en tant que formatrice et animatrice dans divers domaines.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Grâce à mes compétences en marketing, gestion des ressources humaines et organisation événementielle, je mets mon savoir-faire au service de projets innovants et à fort impact.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-presentation-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Formation</h3>
+                    <p>Formatrice expérimentée en gestion des ressources humaines et animation</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-building-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Entrepreneuriat</h3>
+                    <p>Fondatrice de MK Corporation, dédiée à l'entrepreneuriat des jeunes Malgaches</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+                        <i class="ri-team-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Leadership</h3>
+                    <p>Présidente du Regroupement Communautaire des Jeunes TMH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Compétences</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Marketing & Communication -->
+                <div class="bg-white p-6 rounded-lg shadow-sm skill-card transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+                            <i class="ri-megaphone-line text-blue-600 ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Marketing & Communication</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Marketing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-blue-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Communication</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-blue-500" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Relations Publiques</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-blue-500" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gestion & Organisation -->
+                <div class="bg-white p-6 rounded-lg shadow-sm skill-card transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full mr-4">
+                            <i class="ri-settings-line text-green-600 ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Gestion & Organisation</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Gestion des ressources humaines</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-green-500" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Montage de projet</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-green-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Organisation événementielle</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-green-500" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Compétences techniques -->
+                <div class="bg-white p-6 rounded-lg shadow-sm skill-card transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-full mr-4">
+                            <i class="ri-computer-line text-orange-600 ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Compétences techniques</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Microsoft Office</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-orange-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Photoshop, Adobe Premiere Pro</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-orange-500" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">CSS, HTML</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill bg-orange-500" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Expériences Professionnelles</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item pb-12">
+                    <div class="timeline-dot top-0"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm experience-card transition-all duration-300 mb-8">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div class="flex items-center mb-4 md:mb-0">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-building-4-line text-primary ri-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">Présidente et Fondatrice</h3>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-gray-600">MK Corporation</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-gray-600">2020 - Présent</span>
+                            </div>
+                        </div>
+                        <p class="mb-4">MK Corporation est une plateforme innovante dédiée à la promotion de l'entrepreneuriat chez les jeunes Malgaches.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Développement de programmes de formation en entrepreneuriat</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Organisation d'événements de networking pour jeunes entrepreneurs</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Mise en place de partenariats stratégiques avec des entreprises locales</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-dot top-[180px]"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm experience-card transition-all duration-300 mb-8">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div class="flex items-center mb-4 md:mb-0">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-team-line text-primary ri-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">Présidente</h3>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Regroupement Communautaire des Jeunes TMH</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-gray-600">2019 - Présent</span>
+                            </div>
+                        </div>
+                        <p class="mb-4">Leadership d'une organisation communautaire axée sur l'engagement des jeunes.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Lutte contre la corruption</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Prévention de la violence et la grossesse précoce</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Promotion de l'entrepreneuriat chez les jeunes Malgaches</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-dot top-[360px]"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm experience-card transition-all duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div class="flex items-center mb-4 md:mb-0">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-book-open-line text-primary ri-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">Formatrice</h3>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Green Tree University</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-gray-600">2021 - 2023</span>
+                            </div>
+                        </div>
+                        <p class="mb-4">Formation professionnelle dans des domaines clés du développement personnel et professionnel.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Formation en gestion des ressources humaines</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Formation en techniques d'animation</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <p>Développement de programmes de formation sur mesure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Formation Académique</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+                            <i class="ri-graduation-cap-line text-primary ri-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Master 1 en Communication Numérique et Management de Projet</h3>
+                            <p class="text-gray-600 mb-2">Université EMIT, Fianarantsoa</p>
+                            <div class="flex items-center">
+                                <div class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">2020 - 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+                            <i class="ri-graduation-cap-line text-primary ri-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Licence en Relations Publiques et Communication Organisationnelle</h3>
+                            <p class="text-gray-600 mb-2">Université EMIT, Fianarantsoa</p>
+                            <div class="flex items-center">
+                                <div class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">2017 - 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+                            <i class="ri-graduation-cap-line text-primary ri-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Baccalauréat Série A2</h3>
+                            <p class="text-gray-600 mb-2">Lycée privé les Trois boules, Fianarantsoa, Madagascar</p>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">2015 - 2016</div>
+                                <div class="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full">Mention Assez Bien</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Contact</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
+                        <h3 class="text-xl font-semibold mb-6">Informations de Contact</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-mail-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Email</p>
+                                    <p class="font-medium">nosyvony@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-phone-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Téléphone</p>
+                                    <p class="font-medium">+261 34 40 470 18</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                                    <i class="ri-map-pin-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-sm">Adresse</p>
+                                    <p class="font-medium">386AE Ankofafa, Fianarantsoa, Madagascar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm h-[250px] relative overflow-hidden">
+                        <img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Carte" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+                            <div class="bg-white p-3 rounded-full shadow-lg animate-bounce">
+                                <div class="w-8 h-8 flex items-center justify-center text-primary">
+                                    <i class="ri-map-pin-fill ri-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-6">Envoyez-moi un message</h3>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Nom</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded border-none focus:ring-2 focus:ring-primary/50 outline-none" placeholder="Votre nom">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded border-none focus:ring-2 focus:ring-primary/50 outline-none" placeholder="Votre email">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 mb-2">Sujet</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 rounded border-none focus:ring-2 focus:ring-primary/50 outline-none" placeholder="Sujet de votre message">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded border-none focus:ring-2 focus:ring-primary/50 outline-none resize-none" placeholder="Votre message"></textarea>
+                        </div>
+                        
+                        <div class="flex items-center mb-6">
+                            <input type="checkbox" id="consent" class="custom-checkbox mr-3">
+                            <label for="consent" class="text-sm text-gray-600">J'accepte que mes données soient utilisées pour me recontacter</label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded-button transition-all !whitespace-nowrap">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-['Pacifico'] mb-2">Nosy Vony</h2>
+                    <p class="text-white/70">Communication & Entrepreneuriat</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all">
+                        <i class="ri-linkedin-fill text-white"></i>
+                    </a>
+                    <a href="https://www.facebook.com/arsiah.yosaphat" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all">
+                        <i class="ri-facebook-fill text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nosy.vony/" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-all">
+                        <i class="ri-instagram-fill text-white"></i>
+                    </a>
+                   
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/70 text-sm">
+                <p>© 2025 RASOHARINIRINA Nosy Vony Boyaca. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Progress bar animation
+            const progressBars = document.querySelectorAll('.progress-bar-fill');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Custom checkbox functionality
+            const checkboxes = document.querySelectorAll('.custom-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('click', function() {
+                    this.checked = !this.checked;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
